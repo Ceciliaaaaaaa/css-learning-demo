@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>语言伪类选择器</title>
+	<meta charset="UTF-8">
+	<style>
+		:lang(en){
+			quotes:'"' '"';
+		}
+		:lang(en) q{
+			background-color:red;
+		}
+		:lang(fr){
+			quotes:'<<' '>>';
+		}
+		:lang(fr) q{
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<p lang="en">WWF's gole is to:<q cite="https://www.wwf.org">bulid a future where people live in harmony with nature</q>we hope they succeed.</p>
+	<p lang="fr">WWF's gole is to:<q cite="https://www.wwf.org">bulid a future where people live in harmony with nature</q>we hope they succeed.</p>
+</body>
+</html>

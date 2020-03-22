@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>层次选择器</title>
+	<meta charset="UTF-8">
+	<style>
+		body{
+			width:500px;
+			margin:0 auto;
+		}
+		div{
+			margin:5px;
+			padding:5px;
+			border:1px solid;
+		}
+		/*E F后代选择器（包含选择器）*/
+		div div{
+			background-color:orange;
+		}
+		/*E>F子选择器*/
+		body>div{
+			background-color:green;
+		}
+		/*E+F相邻兄弟选择器*/
+		.one+div{
+			background-color:pink;
+		}
+		/*E~F通用选择器*/
+		.two~div{
+			background-color:purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="one">1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4
+		<div class="two">5</div>
+		<div>6</div>
+	</div>
+	<div>7
+		<div>8
+			<div>9
+				<div>10</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>按要求输出结果</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		var colors = ["Red","Green","White","Black"];
+		// case 1 output: 'Red Green White Black'
+		new1="'"+colors[0]+"&nbsp"+colors[1]+"&nbsp;"+colors[2]+"&nbsp;"+colors[3]+"'";
+		document.write(new1);
+		// case 2 output: 'Red+Green+White+Black'
+		new2="'"+colors[0]+"+"+colors[1]+"+"+colors[2]+"+"+colors[3]+"'";
+		document.write(new2);
+		// case 3 output: 'Red,Green,White,Black'
+		new3="'"+colors[0]+","+colors[1]+","+colors[2]+","+colors[3]+"'";
+		document.write(new3);
+	</script>
+</body>
+</html>

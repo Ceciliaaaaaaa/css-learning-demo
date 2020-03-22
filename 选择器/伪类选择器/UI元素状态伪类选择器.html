@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI元素状态伪类选择器</title>
+	<meta charset="UTF-8">
+	<style>
+		/*E:checked选中状态伪类选择器，匹配选中的复选按钮或单选按钮表单元素*/
+		input[type="checkbox"]:checked{
+			outline:solid red;
+		}
+		/*E:enabled启用状态伪类选择器，匹配所有启用的表单元素*/
+		input[type="text"]:enabled{
+			background-color:pink;
+		}
+		/*E:disabled不可用状态伪类选择器，匹配所有禁用的表单元素*/
+		input[type="text"]:disabled{
+			background-color:grey;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div>
+			<input type="checkbox" id="Yes">Yes
+			<input type="checkbox" id="No">No                                                                            
+			<input type="checkbox" id="Unclear">Unclear
+		</div>
+		<div>
+			Name:<input type="text" id="name">
+		</div>
+		<div>
+			Password:<input type="text" id="password" disabled>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>按字母表顺序输出传入的参数字符串</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		function alphabetSort(message){
+			var str=message.split("");
+			str.sort();
+			var newstr=str.join("");
+			return newstr;
+		}
+		var result=alphabetSort("hello");
+		alert(result);
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>absolute定位</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		/*使用left,top,right,bottom四个值进行定位*/
+		.demo{
+			width:100px;
+			height:100px;
+			background-color:red;
+			position:absolute;
+			left:100px;				/*left是距离元素左边线的距离*/
+			/*right:400px;*/		/*right是距离元素右边线的距离*/
+			top:100px;
+			opacity: 0.5;
+		}
+		.box{
+			width:150px;
+			height:150px;
+			background-color: green;
+		}
+		/*absolute脱离原来位置进行定位，即脱离层面，不占空间*/
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+	<div class="box"></div>
+</body>
+</html>

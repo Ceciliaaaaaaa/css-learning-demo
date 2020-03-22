@@ -1,0 +1,108 @@
+/*顶部*/
+.mui-active .mui-tab-label {
+	color: #222222;
+}
+.mui-active .mui-icon {
+	color: rgb(34,198,114);
+}
+.mui-icon-left-nav {
+	color: #fff;
+}
+.mui-title {
+	color: #fff;
+}
+.mui-bar-nav,.search,.nav {
+	background: -webkit-linear-gradient(left,rgb(8,157,171), rgb(34,198,114));
+}
+.mui-search input {
+	background-color: #FFFFFF;	
+}
+/*.mui-placeholder {
+	width: 35%;
+}*/
+.mui-search .mui-placeholder {
+	text-align: left; 
+	padding-left: 5px; 
+}
+.mui-search {
+	margin-left: 6%;
+	width: 88%;
+}
+.search {
+	width: 108%;
+	margin-left: -4%;
+}
+/*主体*/
+.mui-content {
+	margin-top: 6.6%;
+}
+img {
+	width: 78px;
+	height: 89px;
+}
+.discribe {
+    width:65%;
+    float:right;
+    height:89px
+}
+p { /*.describe p错误*/
+	    color:#000;
+	    font-size: 13px;
+}
+.right>div{
+    padding:5px;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.mui-content {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.seller {
+    font-size:10px;
+    color:#808080;
+}
+.exchange {
+    font-size:10px;
+    background-color:rgb(34,198,114);
+    color:#fff;
+    border-radius:3px;
+    padding:0 5px;
+}
+.price {
+    padding:0 5px;
+    font-size: 14px;
+}
+.mui-scroll-wrapper {
+	background-color: white;
+	margin-top: -15px;
+}
+li {
+	list-style: none;
+}
+.left {
+	width:30%;
+}
+.right {
+    width:80%;
+    float:right;
+    margin-top:-740px;
+}
+.left{
+    width:30%;
+    margin-top: -5%;
+    margin-left: -10%;
+}
+.left ul{
+    text-align:center;
+    background-color:#F0F0F0;
+}
+.left li{
+    padding:15px 0;
+    color:	#606060;
+}
+.left li:hover{
+    background-color:#fff;
+    color:#000;
+}

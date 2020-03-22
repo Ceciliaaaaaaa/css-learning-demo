@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浮动流</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.box{
+			float:left;
+			width:100px;
+			height: 100px;
+			background-color: black;
+			opacity: 0.5;
+		}
+		.demo{
+			width:150px;
+			height: 150px;
+			background-color: green;
+		}
+
+		/*浮动元素产生了浮动流*/
+		/*所有产生了浮动流的元素，块级元素看不到他们*/
+		/*产生了bfc的元素和文本类属性的元素（inline属性）以及文本都能看到浮动元素*/
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="demo"></div>
+</body>
+</html>

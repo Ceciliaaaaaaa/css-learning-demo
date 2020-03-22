@@ -1,0 +1,54 @@
+		.content {
+			width: 94%;
+			height: 100%;
+		}
+		.picture {
+			width: 20%;
+			height: auto;
+			margin: 0 auto;
+			margin-left: 45%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.xinxi {
+			margin-top: 5%;
+			width: 90%;
+			height: auto;
+			margin: 0 auto;
+			margin-left: 7%;
+		}
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: KaiTi,STKait;
+	  	}
+	  	.tub{
+			position: fixed;
+			width: 4%;
+			height: 7%;
+			right: 2%;
+			top: 2%;
+			opacity: 1;
+		}
+	  	body{
+			height:100%;
+			width: 100%;
+			animation: lunbotu 20s;
+			position: relative;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes lunbotu{
+			0% {background-image: url(https://hbimg.huabanimg.com/cae75dd3e5851c45e974100091077bb190331b093f6b-K9ji2d_fw658);background-repeat: repeat-y;background-size: 100%; z-index: 0}
+			25% {background-image: url(https://hbimg.huabanimg.com/2eb53db09ae476194ee5fa8601befb1f7b717fef171b3-dxTbVM_fw658);background-repeat: repeat-y; background-size: 100%;z-index: 0}
+			50% {background-image: url(https://hbimg.huabanimg.com/3779d1f7a4e77dc29e70539324d3fd59a47fe0ba2730a-IOibCj_fw658);background-repeat: repeat-y;background-size: 100%;z-index: 0}
+			75% {background-image: url(https://hbimg.huabanimg.com/388c8d17ebca41ab652ce22530b1609a147281d441a2-Um1yt2_fw658); background-repeat: repeat-y;background-size: 100%;z-index: 0}
+			100% {background-image: url(https://hbimg.huabanimg.com/cae75dd3e5851c45e974100091077bb190331b093f6b-K9ji2d_fw658);background-repeat: repeat-y;background-size: 100%;z-index: 0}
+		}
+		html{
+			width: 100%;
+			overflow-x: hidden;
+		}
+		

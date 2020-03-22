@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>双列布局</title>
+	<style>
+		.main{
+			margin-left:150px;
+			margin-right:250px;
+			height:500px;
+			background-color:#FFB6C1;
+		}
+		.left{
+			float:left;
+			width:150px;
+			background-color:#ADD8E6;
+			height:500px;
+		}
+		.right{
+			float:right;
+			width:250px;
+			background-color:#ADD8E6;
+			height:500px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="left">我是固定左边导航栏</div>
+		<div class="right">我是固定右边导航栏</div>
+		<div class="main">我是一个自适应宽度的左边输入框，我支持自动换行不会被右边导航栏所覆盖内容。</div>
+	</div>
+</body>
+</html>

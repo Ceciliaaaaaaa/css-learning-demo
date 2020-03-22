@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: SimSun;
+	list-style:none;
+	text-decoration: none;
+	color:#000;
+}
+html,
+body{
+	width:1300px;
+	background-image: url(bck.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* 导航栏 */
+.wrapper .nav{
+	/* border:solid 1px #000; */
+	position: absolute;
+	width:360px;
+}
+.wrapper .nav ul{
+	border:solid 1px #DB7093;
+	border-radius:20px;
+	position:fixed;
+	top:50px;
+	left:80px;
+}
+.wrapper .nav ul li{
+	/* border:solid 1px #000; */
+	width:150px;
+	height:30px;
+	font-size:20px;
+	text-align:center;
+	line-height:30px;
+	padding:3px;
+}
+.wrapper .nav ul li:hover{
+	background-color:#e6e6e6;
+	border-radius:20px;
+	font-size:21px;
+}
+.wrapper .nav ul li a:hover{
+	color:#DB7093;
+}
+.wrapper .nav ul li i{
+	margin-left:10px;
+}
+.wrapper .nav ul li i:hover{
+	color:#DB7093;
+}
+/* 内容 */
+.wrapper .content{
+	/* border:solid 1px #000; */
+	width:840px;
+	margin-left:360px;
+}
+.wrapper .content div{
+	/* border:solid 1px #000; */
+	margin-bottom:20px;
+	padding:20px;
+}
+.wrapper .content div h2{
+	text-align:center;
+	column-span:all;
+}
+.wrapper .content div p{
+	text-indent:2em;
+	margin:25px 0;
+}
+.wrapper .content div h2{
+	text-align:center;
+}

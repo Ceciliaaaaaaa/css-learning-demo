@@ -1,0 +1,51 @@
+	.picture {
+			width: 20%;
+			height: auto;
+			margin: 0 auto;
+		}
+			
+.tub{
+	position: fixed;
+	width: 4%;
+	height: 7%;
+	right: 2%;
+	top: 2%;
+	opacity: 1;
+}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.xinxi {
+			margin-top: 5%;
+			width: 90%;
+			height: auto;
+			margin: 0 auto;
+		}
+		body div {
+			width: 100%;
+			height: 100%;
+			/*margin: 5% auto;*/
+		}
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: KaiTi,STKait;
+	  	}
+	  	.div{
+			height:90%;
+			width:100%;
+			animation: lunbotu 16s;
+			position: relative;
+			top: 0px;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes lunbotu{
+			0% {background-image: url(http://b-ssl.duitang.com/uploads/item/201703/20/20170320224303_5zhrA.thumb.700_0.jpeg); background-size: 100%; background-repeat: repeat-y; z-index: 0}
+			25% {background-image: url(img/img401.jpg);background-size: 100%; background-repeat: repeat-y; background-position: bottom left; z-index: 0}
+			50% {background-image: url(http://b-ssl.duitang.com/uploads/item/201703/20/20170320224303_5zhrA.thumb.700_0.jpeg);background-size: 100%; background-repeat: repeat-y; z-index: 0}
+			75% {background-image: url(img/img401.jpg);background-size: 100%; background-repeat: repeat-y; z-index: 0}
+
+			100% {background-image: url(http://b-ssl.duitang.com/uploads/item/201703/20/20170320224303_5zhrA.thumb.700_0.jpeg);background-size: 100%; background-repeat: repeat-y; z-index: 0}
+		}

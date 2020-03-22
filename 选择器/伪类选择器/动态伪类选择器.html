@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动态伪类选择器</title>
+	<meta charset="UTF-8">
+	<style>
+		div{
+			margin:0 auto;
+			width:100px;
+			text-align:center;
+		}
+		/*E:link连接伪类选择器（未访问）*/
+		a:link{
+			color:#FF00FF;
+		}
+		/*E:visited连接伪类选择器（已访问）*/
+		a:visited{
+			color:orange;
+		}
+		/*E:hover用户行为选择器（悬停）*/
+		a:hover{
+			color:pink;
+		}
+		/*E:active用户行为伪类选择器（被激活）*/
+		a:active{
+			color:green;
+		}
+		/*E:focus用户行为选择器（获得焦点）*/
+		input:focus{
+			background-color:yellow;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<a href="http://www.baidu.com">Button</a>
+		<form><input type="text"></form>
+	</div>
+</body>
+</html>

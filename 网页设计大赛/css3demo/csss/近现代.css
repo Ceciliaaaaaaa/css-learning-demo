@@ -1,0 +1,38 @@
+		.picture {
+			width: 20%;
+			height: auto;
+			margin: 0 auto;
+		}
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.xinxi {
+			margin-top: 5%;
+			width: 90%;
+			height: auto;
+			margin: 0 auto;
+		}
+		body div {
+			width: 100%;
+			margin: 5% auto;
+		}
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: KaiTi,STKait;
+	  	}
+	  	body {
+	  		background:#fff url(https://hbimg.huabanimg.com/2eb53db09ae476194ee5fa8601befb1f7b717fef171b3-dxTbVM_fw658) repeat-y left top;
+		  	background-size:100%;
+	  	}
+	.tub{
+	position: fixed;
+	width: 4%;
+	height: 7%;
+	right: 2%;
+	top: 2%;
+	opacity: 1;
+	border: 0;
+}

@@ -1,0 +1,69 @@
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	video {
+    	width: 100%;
+    	height: auto;
+	}
+	.two,.three,.four,.five {
+		width: 30%;
+		height: auto;
+		margin:  6% 0 0 0;
+	}
+	.two {
+		margin-left: 35%;
+	}
+	.three {
+		margin-left: 10%;
+	}
+	.one {
+		width: 30%;
+		height: auto;
+		margin: 0;
+		margin-top: 5%;
+		margin-left: 50%;
+	}
+	.three,.four {
+		display: inline-block;
+	}
+	.four {
+		margin-left: 10%;
+	}
+	.five {
+		margin-left: 25%;
+		margin-top: 8%;
+	}
+	a{
+		text-decoration: none
+	}
+	img {
+		border:1px solid;
+		border-radius: 2px;
+		border-color: #D3D3D3;
+		width:100%; 
+		height:auto;
+	}
+	.big{
+			height:100%;
+			width: 100%;
+			animation: lunbotu 20s;
+			position: relative;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+	}
+		body {
+			
+			background:#fff url(http://ku.90sjimg.com/back_pic/05/41/52/535a620bc9c3cc4.jpg) repeat-y left top; 
+			background-size: 100%;
+		}
+
+.tub{
+	position: fixed;
+	width: 4%;
+	height: 7%;
+	right: 2%;
+	top: 2%;
+	border: 0;
+}
+

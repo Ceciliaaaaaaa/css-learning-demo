@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>table布局练习</title>
+	<style>
+		table{
+			width: 1250px;
+			border-collapse: collapse;
+		}
+		.head{
+			width:100%;
+			height:70px;
+			background-color: orange;
+		}
+		.foot{
+			width:100%;
+			height:70px;
+			background-color: purple;
+		}
+		.left{
+			width:20%;
+			height:450px;
+			background-color: yellow;
+		}
+		.right{
+			width:20%;
+			height:450px;
+			background-color: blue;
+		}
+		.main{
+			height:450px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="3" class="head">这是头部</td>
+		</tr>
+		<tr>
+			<td class="left">左菜单</td>
+			<td class="main">内容</td>
+			<td class="right">右菜单</td>
+		</tr>
+		<tr>
+			<td colspan="3" class="foot">这是底部</td>
+		</tr>
+	</table>
+</body>
+</html>

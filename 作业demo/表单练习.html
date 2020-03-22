@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>表单练习</title>
+	<style>
+		.one{
+			float:left;
+			width:150px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div>
+			<lable for="account" class="one">账号：</lable>
+			<input type="text" placeholder="请输入想注册的账号">
+		</div>
+		<div>
+			<lable for="password" class="one">密码：</lable>
+			<input type="text" placeholder="请设置您账号的登入密码">
+		</div>
+		<div>
+			<lable for="password" class="one">重复密码：</lable>
+			<input type="text" placeholder="再次输入密码">
+		</div>
+		<div>
+			<lable for="verify" class="one">验证码：</lable>
+			<input type="text" placeholder="请输入六位验证码">
+		</div>
+		<div>
+			<lable for="sex" class="one">性别：</lable>
+			<input type="radio" name="sex">男
+			<input type="radio" name="sex">女
+		</div>
+		<div>
+			<lable for="what" class="one">玩过什么游戏：</lable>
+			<input type="checkbox">英雄联盟
+			<input type="checkbox">穿越火线
+			<input type="checkbox">魔兽世界
+			<input type="checkbox">守望先锋
+		</div>
+		<div>
+			<select name="date">
+				<option value="年">年</option>
+				<option value="月">月</option>
+				<option value="日">日</option>
+			</select><br/>
+		</div>
+		<div>
+			<button type="button">按钮</button>
+			<button type="submit">提交</button>
+			<button type="reset">重置</button>
+		</div>
+	</form>
+</body>
+</html>

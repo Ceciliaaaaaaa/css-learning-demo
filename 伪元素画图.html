@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        /* 对话框 */
+        .box1{
+            position: absolute;
+            top:40px;
+            left:100px;
+        }
+        .dialog::before{
+            content: "";
+            display: block;
+            width: 250px;
+            height: 120px;
+            border-radius: 20px;
+            background-color: cornflowerblue;
+        }
+        .dialog::after{
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color: cornflowerblue;
+            transform: rotate(45deg);
+            position: absolute;
+            left:120px;
+            top:80px;
+        }
+        /* 圆角矩形拼接爱心 */
+        .box2{
+            position: absolute;
+            top: 220px;
+            left: 175px;
+        }
+        .heart1::before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 150px;
+            background-color: hotpink;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            transform: rotate(45deg);
+        }
+        .heart1::after{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 150px;
+            background-color: hotpink;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            position: absolute;
+            top: 0;
+            left:-36px;
+            transform: rotate(-45deg);
+        }
+        /* 矩形圆形拼接爱心 */
+        .box3{
+            position: absolute;
+            left:150px;
+            top:450px;
+        }
+        .heart2{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            transform: rotate(-135deg);
+        }
+        .heart2::before{
+            content: "";
+            display: block;
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            left: 50px;
+        }
+        .heart2::after{
+            content: "";
+            display: block;
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top:50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 对话框 -->
+    <div class="box1">
+        <div class="dialog"></div>
+    </div>
+    <!-- 圆角矩形拼接爱心 -->
+    <div class="box2">
+        <div class="heart1"></div>
+    </div>
+    <!-- 矩形圆形拼接爱心 -->
+    <div class="box3">
+        <div class="heart2"></div>
+    </div>
+</body>
+</html>

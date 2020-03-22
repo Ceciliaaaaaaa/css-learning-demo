@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首字母转换为大写</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		var sentence ="good afternoon, mr mike.";
+		sen1=sentence.substr(0,4)
+		sen11=sen1.substr(0,1)
+		sen12=sen1.substr(1)
+		sen11=sen11.toUpperCase()
+		sen1=sen11+sen12
+
+		sen2=sentence.substr(4,11)
+		sen21=sen2.substr(0,2)
+		sen22=sen2.substr(2)
+		sen21=sen21.toUpperCase()
+		sen2=sen21+sen22
+
+		sen3=sentence.substr(15,3)
+		sen31=sen3.substr(0,2)
+		sen32=sen3.substr(2)
+		sen31=sen31.toUpperCase()
+		sen3=sen31+sen32
+
+		sen4=sentence.substr(18)
+		sen41=sen4.substr(0,2)
+		sen42=sen4.substr(2)
+		sen41=sen41.toUpperCase()
+		sen4=sen41+sen42
+
+		sentence=sen1+sen2+sen3+sen4
+		document.write(sentence)
+	</script>
+</body>
+</html>

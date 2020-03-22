@@ -1,0 +1,246 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	color:#000;
+	font-family: 宋体;
+}
+html,
+body{
+	width:1200px;
+	background-image: url(bck.jpg);
+	background-attachment:fixed;
+	background-position:0 -150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*登录*/
+.wrapper1{
+	border:solid 1px #c8c8c8;
+	width:400px;
+	height:500px;
+	border-radius:5px;
+	position:absolute;
+	right:5%;
+	top:50%;
+	margin-top:-250px;
+	background-color: #f5f5f5;
+}
+.wrapper1 .head{
+	/*border:solid 1px #000;*/
+	width:55px;
+	font-size:25px;
+	padding:10px 10px;
+	font-weight: bold;
+}
+.wrapper1 .head:hover{
+	border-bottom: solid 2px #FF4500;
+}
+.wrapper1 .head a{
+	color:#969696;
+}
+.wrapper1 .login{
+	position:absolute;
+	top:20px;
+	left:100px;
+}
+.wrapper1 .register{
+	position:absolute;
+	top:20px;
+	right:100px;
+}
+.wrapper1 a.click{
+	color:#FF4500;
+}
+.wrapper1 .name{
+	/* border:solid 1px #000; */
+	width:300px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	position: absolute;
+	top:90px;
+	left:50px;
+
+}
+.wrapper1 form .username,
+.wrapper1 form .password{
+	border:solid 1px #c8c8c8;
+	border-radius: 3px;
+	width:300px;
+	height:40px;
+	background-color: #f6f6f6;
+
+}
+.wrapper1 form div i{
+	font-size:20px;
+	line-height:40px;
+	padding:0 10px;
+	color:#969696;
+}
+.wrapper1 form input{
+	border:none;
+	background-color: #f6f6f6;
+}
+.wrapper1 form input:focus{
+	outline:none;
+}
+.wrapper1 form .username{
+	position:absolute;
+	top:160px;
+	left:50px;
+}
+.wrapper1 form .password{
+	position:absolute;
+	top:220px;
+	left:50px;
+}
+.wrapper1 form .remember{
+	/*border:solid 1px #000;*/
+	width:70px;
+	padding:10px 10px;
+	position:absolute;
+	top:280px;
+	left:50px;
+	color:#969696;
+}
+.wrapper1 form .forget{
+	/*border:solid 1px #000;*/
+	width:70px;
+	padding:10px 10px;
+	position: absolute;
+	top:280px;
+	right:50px;
+}
+.wrapper1 form .forget a{
+	color:#969696;
+}
+.wrapper1 form .forget a:hover{
+	color:#000;
+}
+.wrapper1 form .submit{
+	/*border:1px solid #000;*/
+	width:300px;
+	height:40px;
+	position:absolute;
+	top:350px;
+	right:50px;
+}
+.wrapper1 form .submit button{
+	width:300px;
+	height:40px;
+	border-radius:20px;
+	background-color: #3194d0;
+	border:#3194d0;
+}
+.wrapper1 form .submit button:hover{
+	background-color:#187cb7;
+}
+.wrapper1 form .submit button span{
+	font-size:20px;
+	color:#fff;
+	margin:0 20px;
+	font-weight: bold;
+}
+/*注册*/
+.wrapper2{
+	border:solid 1px #c8c8c8;
+	width:400px;
+	height:500px;
+	border-radius:5px;
+	position:absolute;
+	right:5%;
+	top:50%;
+	margin-top:-250px;
+	background-color: #f5f5f5;
+}
+.wrapper2 .head{
+	/*border:solid 1px #000;*/
+	width:55px;
+	font-size:25px;
+	padding:10px 10px;
+	font-weight: bold;
+}
+.wrapper2 .head:hover{
+	border-bottom: solid 2px #FF4500;
+}
+.wrapper2 .head a{
+	color:#969696;
+}
+.wrapper2 .login{
+	position:absolute;
+	top:20px;
+	left:100px;
+}
+.wrapper2 .register{
+	position:absolute;
+	top:20px;
+	right:100px;
+}
+.wrapper2 a.click{
+	color:#FF4500;
+}
+.wrapper2 form .username,
+.wrapper2 form .number,
+.wrapper2 form .password{
+	border:solid 1px #c8c8c8;
+	border-radius: 3px;
+	width:300px;
+	height:40px;
+	background-color: #f6f6f6;
+
+}
+.wrapper2 form div i{
+	font-size:20px;
+	line-height:40px;
+	padding:0 10px;
+	color:#969696;
+}
+.wrapper2 form input{
+	border:none;
+	background-color: #f6f6f6;
+}
+.wrapper2 form input:focus{
+	outline:none;
+}
+.wrapper2 form .username{
+	position:absolute;
+	top:100px;
+	left:50px;
+}
+.wrapper2 form .number{
+	position: absolute;
+	top:160px;
+	left:50px;
+}
+.wrapper2 form .password{
+	position:absolute;
+	top:220px;
+	left:50px;
+}
+
+.wrapper2 form .submit{
+	/*border:1px solid #000;*/
+	width:300px;
+	height:40px;
+	position:absolute;
+	top:300px;
+	right:50px;
+}
+.wrapper2 form .submit button{
+	width:300px;
+	height:40px;
+	border-radius:20px;
+	background-color:#42c02e;
+	border:#42c02e;
+}
+.wrapper2 form .submit button:hover{
+	background-color:#3db922;
+}
+.wrapper2 form .submit button span{
+	font-size:20px;
+	color:#fff;
+	margin:0 20px;
+	font-weight: bold;
+}

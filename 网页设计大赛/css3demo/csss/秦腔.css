@@ -1,0 +1,89 @@
+	*{
+		margin:0;
+		padding: 0;
+	}
+	body{
+		height: 100%;
+		width: 100%;
+		background-image: url(https://hbimg.huabanimg.com/728389888bc64b42190e65254775545dbe07cd00128f-lfDBOh_fw658);
+);
+		background-size: 100%;
+		background-repeat: repeat-y;
+	}
+	img{
+		opacity: 0.6;
+	}
+	.font{
+		font-size: 45px;
+		font-family: Kaiti;
+		font-weight: 900;
+		position: fixed;
+		top: 10%;
+		left: 85%;
+	}
+	
+		
+		.suojin{
+			text-indent: 2em;
+			font-family: STKaiti;
+			font-size: 25px;
+		}
+		.middle {
+			margin-top: 20%;
+			margin-left: 5%;
+			height: 100%;
+			width: 100%;
+		}
+		.med{
+			height: 100%;
+			width: 50%;
+			font-family: "Times New Roman",Georgia,Serif;
+			vertical-align: top;
+		}
+		.tub{
+			position: fixed;
+			width: 3%;
+			height: 7%;
+			right: 1%;
+			top: 2%;
+			opacity: 1;
+		}
+  		.left{
+			width: 20%;
+			vertical-align: top;
+			margin-left: 3%;
+			margin-top: 3%;
+		}
+		.right {
+			position: relative;
+			width: 20%;
+			vertical-align: top;
+			margin-top: 16%;
+			float: left;
+		}
+		.right img:hover{
+			transform: scale(1.1);
+		}
+		.left img:hover{
+			transform: scale(1.1);
+		}
+		.left img{
+			width: 100%;
+			height: auto;
+			transition: transform 0.3s;
+		}
+		.right img{
+			width:100%;
+			transition: transform 0.3s;
+			height:auto;
+		}
+		.med,.left,.right {
+			display: inline-block;
+		}
+		.font,.fontone{
+			margin-left: 15px;
+			margin-top: -10px;
+			font-size: 1;
+		}
+
+	

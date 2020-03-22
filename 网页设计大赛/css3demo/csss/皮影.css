@@ -1,0 +1,81 @@
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.nav{		
+			height:100%;
+			width: 100%;
+			animation: lunbotu 4s;
+			animation-iteration-count:1;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+			}
+		.tub{
+			position: fixed;
+			width: 3%;
+			height: 6%;
+			right: 1%;
+			top: 2%;
+			opacity: 1;
+		}
+		img{
+			opacity: 0.8;
+		}
+		@keyframes lunbotu{
+			0% {background-image: url(img/004.jpg); transform: scale(2,2); z-index: 0; opacity: 0.7;background-size: 100%;}
+			20% {background-image: url(img/008.jpg); z-index: 0; opacity: 0.7;}
+			40% {background-image: url(img/005.jpg); z-index: 0; opacity: 0.7}
+			60% {background-image: url(img/004.jpg);z-index: 0; opacity: 0.7; background-size: 100%;}
+			80% {background-image: url(img/002.jpg);  z-index: 0; opacity: 0.7;background-size: 100%;}
+			100% {background-image: url(img/005.jpg); z-index: 0; opacity: 0.7}
+		}
+		.suojin{
+			text-indent: 2em;
+		}
+		.med{
+			height: 100%;
+			width: 55%;
+			font-family: "Times New Roman",Georgia,Serif;
+			font-size: 17px;
+			vertical-align: top;
+		}
+		.middle {
+			margin-left: 7%;
+			margin-top: 15%;
+		}
+		.left{
+			width: 20%;
+			height: 100%;
+			vertical-align: top;
+		}
+		.right{
+			width: 20%;
+			height: 100%;
+			vertical-align: top;
+			margin-top: 6%;
+			position: relative;
+			right: -3%;
+		}
+  		img{
+  			cursor: pointer;
+  		}
+		.left img:hover{
+			transform: scale(1.1);
+		}
+		.right img:hover{
+			transform: scale(1.1);
+		}
+		.left img{
+			width: 100%;
+			transition: transform 0.3s;
+			height: auto;
+		}
+		.right img{
+			width: 100%;
+			transition: transform 0.3s;
+			height: auto;
+		}
+		.med,.right,.left {
+			display: inline-block;
+		}
+		

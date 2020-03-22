@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>盛世古都-长安</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/supersized.css">
+        <!--<link rel="stylesheet" href="assets/css/style.css">-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="imga/logo.ico"/>
+    
+    <link rel="stylesheet" type="text/css" href="csss/index.css"/>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+   
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="page-container" id="hide">
+        <span style="color: #000000; position:absolute;font-size: 30px; text-align: center; left: 140px;">登录</span>
+        <form action="" method="post">
+            <p>
+               <input type="text" name="username" class="username" placeholder="用户名">
+            </p>
+            <p>
+             <input type="password" name="password" class="password" placeholder="密码">
+            </p>
+            <p>
+            <span id="zhuce1">登录</span>
+            
+            </p>
+            <br>
+            <br>
+            <br>
+            <p style="padding: 20px; color: #3D3D3D;font-size: 10px;">
+                如果您还没有账号，请<a href="注册.html" style="color: #EF4300;">注册</a></p>
+            <div class="error"><span>+</span></div>
+        </form>
+</div>
+<div style="overflow: hidden; width: 100%;height: 100%;">
+     
+<div class="banner">
+                <div class="bannerCon">
+                    <ul class="imgList">
+                        <li>
+                            <a href="#"><img src="imga/古风背景3.jpg"/> </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="imga/古风背景4.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="imga/古风背景6.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<div id="box">
+    <div class="box2">
+        <img src="imga/biaozhi.jpg" style="height:150px;width:301px ;left:0;" >
+    </div>
+    <div class="box1">首页
+        <div class="box1Son">Welcome to Xi'An</div>
+    </div>
+    <div class="box1">相册
+        <div class="box1Son">
+        <a href="美食.html" target="_blank">美食大全</a>
+        <a href="lutu.html" target="_blank">路途风景</a>
+        <a href="minsu.html" target="_blank">民俗物件</a>
+    </div>
+</div>
+    <div class="box1">民俗
+        <div class="box1Son">
+        <a href="剪纸.html"target="_blank">剪纸</a>
+        <a href="秦腔.html"target="_blank">秦腔</a>
+        <a href="鼓乐.html"target="_blank">鼓乐</a>
+        <a href="皮影.html"target="_blank">皮影</a>
+    </div>
+</div>
+    <div class="box1">名人录
+        <div class="box1Son">
+        <a href="两汉.html" target="_blank">两汉</a>
+        <a href="隋唐.html" target="_blank">隋唐</a>
+        <a href="两晋.html" target="_blank">两晋</a>
+        <a href="近现代.html"target="_blank">近现代</a>
+    </div>
+</div>
+    <div class="box1">名胜古迹
+        <div class="box1Son">
+        <a href="名胜古迹-休闲景点.html" target="_blank">休闲景点</a>
+        <a href="名胜古迹-人文景点.html" target="_blank">人文景点</a>
+    </div>
+</div>
+    <div class="topl">
+        <span id="login">登录</span>
+        <span id="zhuce">注册</span>
+        <a href="history.html"target="_blank">历史概况</a>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    var Box1=document.getElementsByClassName("box1");
+    var Box1Son=document.getElementsByClassName("box1Son");
+    for(var i=0;i<Box1.length;i++){
+        Box1[i].index=i;
+        Box1[i].onmouseover=function(){
+            setInterval(fn(Box1Son[this.index]),2000);
+        };
+
+        Box1[i].onmouseout=function(){
+
+            Box1Son[this.index].style.display="none";
+        }
+    }
+
+    var wait=setInterval(fn,1000);
+    function fn(ele){
+        if(!$(".box1").is(":animated")){
+            clearInterval(wait);
+            ele.style.display="block";
+            ele.style.width=300+"px";
+            // alert(2);
+        }
+    }
+    
+    //轮播图
+        function Scroll(obj,speed,interval) { //这是一个封装函数。父级容器，轮播速度，切换间隔
+            //obj为元素的class名，利用字符串特性完成对元素的选择
+                $("." + obj).each(function() {
+                    //$("."+obj)这个表示的是获取页面中class含有obj的对象，返回的是jQuery对象数组；each()就是遍历这个数组。
+                    var $box = $(this),
+                        $imgUl = $box.children(".imgList"),
+                        $imgLi = $imgUl.children("li"),//这是一组值，数组
+                        n = $imgLi.length,
+                        width = $imgLi.width(),
+                        left = parseFloat($imgUl.css("left")),
+                        k = 0,
+                        Player;
+                    $imgUl.css("width", n * width);
+
+                    function scroll() { //轮播事件
+                        $imgUl.stop().animate(speed,function() {
+                            k += 1;
+                            
+                            
+                            $imgUl.children("li:first").appendTo($(this));
+                            //找到ul的第一个li标签并把它放在最后一个
+                            
+                            //第一次展示完毕，进行归零
+                            if(k >= n) {
+                                k = 0;
+                            }
+                        });
+                    }
+                    Player = setInterval(function() {
+                        scroll()
+                    }, interval);
+                });
+            }
+            $(function() { //读取轮播事件，运行函数，3000是函数执行间隔时间
+                Scroll("bannerCon",0,3000);
+            });
+            
+            
+            //注册弹出界面
+            $(function(){
+            $("#login").click(function(){
+                $("#hide").fadeIn(2000);
+                
+            })
+            $("#zhuce1").click(function(){
+                $("#hide").hide();
+                $("#login").html("欢迎你"+$(".username").val())
+                $("#zhuce").hide();
+                $("button").click(function(){
+                    $("#")
+                })
+            })
+            
+        })
+    </script>
+<div id="box1">
+</div>
+<script type="text/javascript">
+      var aDiv=document.getElementsByTagName("body")[0];
+     function snow () {
+    var newImg = document.createElement("img");
+    newImg.src="imga/花朵.png";
+    var oLeft = parseInt(Math.random() * 1400);
+    var oTop = parseInt(Math.random() * 300);
+    var aImg=document.getElementsByClassName("snow");
+    // newDiv.className = "";
+    newImg.className="snow";
+    newImg.style.left = oLeft + "px";
+    newImg.style.top = oTop + "px";
+    aDiv.appendChild(newImg);
+
+    var key=1;
+    var timer1 = setInterval(autoPlay,100);
+    function autoPlay() {
+        if (newImg.offsetTop >= 600) {
+            newImg.style.top =0;
+            key = 0;
+        }
+        if (newImg.offsetTop <= 0) {
+            key = 1;
+        }
+        animate(key * 600, newImg);
+    }
+};
+    
+    for (var i=0;i<10;i++){
+        snow();
+    }
+
+
+
+    function animate(target,ele){
+        //定义一个定时器
+        // 使用器用之前应该先清除
+        clearInterval(ele.timer);
+        var speed=target>ele.offsetTop?1:-1;
+        ele.timer=setInterval(function(){
+            var val=target-ele.offsetTop;
+            ele.style.top=ele.offsetTop+speed+"px";
+
+            if(Math.abs(val)<Math.abs(speed)){
+                ele.style.top=target+"px";
+                clearInterval(ele.timer);
+            }
+        },10);
+    }
+
+</script>
+</body>
+</html>

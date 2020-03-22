@@ -1,0 +1,89 @@
+	*{
+		margin:0;
+		padding: 0;
+	}
+		.nav{		
+			position: relative;
+			height: 100%;
+			width: 100%;
+			animation: lunbotu 15s;
+			animation-iteration-count:1;
+			animation-fill-mode: forwards;
+			animation-delay: 0s;
+		}
+		@keyframes lunbotu{
+			0% {background-image: url(img/002.jpg); z-index: 0; opacity: 0.7;background-size:100%; background-repeat: repeat-y;}
+			25% {background-image: url(https://hbimg.huabanimg.com/b07297c29c73d89e9a6f09c8efcdd4257fe8675114089-QxuB9m_fw658); z-index: 0; opacity: 0.7;background-size:100%; background-repeat: repeat-y;}
+			50% {background-image: url(https://hbimg.huabanimg.com/0ca0136b319568fc266b57607f99beb68d4296963a83-PZYs6i_fw658
+);z-index: 0; opacity: 0.7 ; background-size:100%; background-repeat: repeat-y;}
+			75% {background-image: url(https://hbimg.huabanimg.com/bb4131804d4ba2cff77de89c91725603a37387dd2b8e-7s9upo_fw658
+);  z-index: 0; opacity: 0.7;background-size:100%; background-repeat: repeat-y;}
+			100% {background-image: url(img/002.jpg); z-index: 0; opacity: 0.7;background-size:100%; background-repeat: repeat-y;}
+		}
+  		.picture{
+  			cursor: pointer;
+  		}
+		.suojin{
+			text-indent: 2em;
+			font-family: STKaiti;
+			font-size: 25px;
+		}
+		.middle {
+			margin-top: 20%;
+			margin-left: 5%;
+			height: 100%;
+			width: 100%;
+		}
+		.med{
+			height: 100%;
+			width: 49%;
+			font-family: "Times New Roman",Georgia,Serif;
+			/*font-size: 17px;*/
+			vertical-align: top;
+		}
+		.tub{
+			position: fixed;
+			width: 4%;
+			height: 7%;
+			right: 1%;
+			top: 2%;
+			opacity: 1;
+		}
+  		.left{
+			width: 21%;
+			vertical-align: top;
+			margin-left: 3%;
+			margin-top: 1%;
+		}
+		.right {
+			position: relative;
+			width: 21%;
+			vertical-align: top;
+			margin-top: 16%;
+			right: -3%;
+		}
+		img{
+			opacity: 0.7
+		}
+		.right img:hover{
+			transform: scale(1.1);
+		}
+		.left img:hover{
+			transform: scale(1.1);
+		}
+		.left img{
+			width: 100%;
+			height: auto;
+			transition: transform 0.3s;
+		}
+		.right img{
+			width:100% ;
+			transition: transform 0.3s;
+			height:auto;
+		}
+		.left,.med,.right {
+			display: inline-block;
+		}
+		
+
+		

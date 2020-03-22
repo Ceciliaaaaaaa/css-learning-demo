@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>信用卡申请表单</title>
+	<meta charset="UTF-8">
+	<style>
+		.pos{
+			float:left;
+			width:100px;
+		}
+	</style>
+</head>
+<body>
+	<h2>思沃银行信用卡申请</h2><hr/>
+	<h3>尊敬的用户</h3>
+	<p>请您如实填写以下资料，以便快速申请信用卡：</p>
+	<form>
+		<div>
+			<lable for="name" class="pos">姓名：</lable>
+			<input type="text">
+		</div>
+		<div>
+			<lable for="type" class="pos">证件类型：</lable>
+			<select name="type">
+				<option value="身份证" checked="checked">身份证</option>
+				<option value="护照">护照</option>
+				<option value="其他">其他</option>
+			</select>
+		</div>
+		<div>
+			<lable for="number" class="pos">证件号码：</lable>
+			<input type="text">
+		</div>
+		<div>
+			<lable for="area" class="pos">所在地区：</lable>
+			<input type="text">
+		</div>
+	</form>
+</body>
+</html>

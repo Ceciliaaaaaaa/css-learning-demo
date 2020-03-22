@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算一个字符串共由多少个单词组成</title>
+	<meta charst="UTF-8">
+</head>
+<body>
+	<script>
+		function countWords(message){
+			var len=message.length;
+			for (var i=0;i<=len;i++){
+				var num=1;
+				if (message[i]== "&nbsp;"){
+					num=num+1;
+				}
+				return num;
+			}
+		}
+		var result=countWords('Good morning, I love JavaScript.');
+		alert(result);
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三列圣杯布局</title>
+	<meta charset="UTF-8">
+	<style>
+		.main{
+			float:left;
+			width:100%;
+		}
+		.left{
+			float:left;
+			width:240px;
+			margin-left:-100%;
+			position:relative;
+			left:-250px;
+			border:solid #D3D3D3;
+			text-align:center;
+		}
+		.right{
+			float:left;
+			width:250px;
+			margin-left:-250px;
+			position:relative;
+			right:-250px;
+			background-color:#D3D3D3;
+			text-align:center;
+		}
+		#bd{
+			padding:0 250px 0 250px;
+		}
+	</style>
+</head>
+<body>
+	<div id="bd">
+		<div class="main">Three columns. One fixed-width sidebar for your navigation, another for, say, your Google Ads or your Flicker photos——and, as in a fancy truffle, a liquid center for the real substance. Its wide applicablity in this golden age of blogging, along with its considerable difficulty, is what has earned the layout the title of Holy Grail.</div>
+		<div class="left">
+			<p>Want the best way to store and severe images and videos? Try Cloudinary. Get your own free account.</p>
+		</div>
+		<div class="right">
+			<p>A Book Apart:<br/>Brief books for people who make websites.</p>
+		</div>
+	</div>
+</body>
+</html>

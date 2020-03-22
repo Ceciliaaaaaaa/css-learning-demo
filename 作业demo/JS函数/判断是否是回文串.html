@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>判断是否是回文串</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		function palindrome(message){
+			var len=message.length;
+			for (var i=0;i<len;i++){
+				if (message.charAt(i)==message.charAt(len-1-i)){
+					return "True"
+				}
+				else{
+					return "Flase"
+				}
+			}
+		}
+		alert(palindrome("hello"));
+		alert(palindrome("abcba"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>从大到小排顺序</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		var a = [5,1,8,10,4];
+		// 创建每次循环存储最大值的变量
+		var max;
+		// 遍历数组，默认a中的某一个元素为最大值，进行逐一比较
+		for(var i=0;i<a.length;i++){
+			// 外层循环一次，就拿a[i]和内层循环a.length次的a[j]做对比
+			for(var j=i;j<a.length;j++){
+				if(a[i]<a[j]){
+					// 如果a[j]大就把此时的值赋给最大变量值max
+					max=a[j];
+					a[j]=a[i];
+					a[i]=max;
+				}
+			}
+		}
+		document.write(a);
+	</script>
+</body>
+</html>

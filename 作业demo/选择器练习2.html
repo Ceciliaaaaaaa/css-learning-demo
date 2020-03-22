@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<title>选择器练习2</title>
+	<style>
+		[title]{
+			color:red;
+		}
+		[title="demo"]{
+			color:blue;
+		}
+		[title*="demo"]{
+			color:yellow;
+		}
+		[title^="zh"]{
+			color:orange;
+		}
+	</style>
+</head>
+<body>
+	<div title="demo">1</div>
+	<div>2</div>
+	<div>3</div>
+	<div title="demoa">4</div>
+	<div>5</div>
+	<div title="ademob">6</div>
+	<div>7</div>
+	<div title="zh">8</div>
+	<div>9</div>
+	<div title="zha">10</div>
+</body>
+</html>
